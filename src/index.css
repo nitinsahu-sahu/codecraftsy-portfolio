@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.bgi1 {
+  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/image_2023_06_22T07_35_32_488Z-e1687421820101.png');
+}
+
+.bgi2 {
+  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/wp-e1688992192885.png');
+}
+
+.bgi3 {
+  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/corephp.png');
+}
+
+.bgi4 {
+  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/screencapture-herwishlist-2023-07-12-14_05_10-e1689151024909.png');
+}
+
+.bgi5 {
+  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/image_2023_06_22T07_44_23_609Z-1-e1687421603744.png');
+}
+
