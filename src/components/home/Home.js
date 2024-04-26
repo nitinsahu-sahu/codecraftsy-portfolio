@@ -1,10 +1,8 @@
 import React from 'react'
-import Circle from './Circle';
 
 const Home = () => {
   return (
-    <>
-    <section>
+    <section className='folio_12'>
       <div className="img-accordion">
         <div className="img img1">
           <p className='bgi1'></p>
@@ -26,10 +24,7 @@ const Home = () => {
         </div>
       </div>
     </section>
-    <section>
-        <Circle />
-    </section>
-</>
+
   )
 }
 

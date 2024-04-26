@@ -9,7 +9,15 @@
   box-sizing: border-box;
 }
 
-body {
+/* -------------------Navbar------------------------ */
+/* .nav_121{
+  margin-left: 10rem;
+  margin-right: 10rem;
+} */
+
+/* -------------------Home------------------------ */
+
+.folio_12 {
   background-color: #100;
   min-height: 100vh;
   display: flex;
