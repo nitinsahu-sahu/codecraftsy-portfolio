@@ -1,7 +1,9 @@
 import React from 'react'
+import Circle from './Circle';
 
 const Home = () => {
   return (
+    <>
     <section className='folio_12'>
       <div className="img-accordion">
         <div className="img img1">
@@ -24,7 +26,10 @@ const Home = () => {
         </div>
       </div>
     </section>
-
+      <section>
+        <Circle />
+      </section>
+      </>
   )
 }
 
