@@ -1,16 +1,18 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import { About, ContactUs, Home, Services } from './components';
-
+import { About, ContactUs, Footer, Home,  NavBar,  Services } from './components';
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
+      <NavBar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact-us' element={<ContactUs />} />
         <Route path='/about' element={<About />} />
-        <Route path='/service' element={<Services />} />
+        <Route path='/services' element={<Services />} />
       </Routes>
+      <Footer />
     </div>
   );
 }

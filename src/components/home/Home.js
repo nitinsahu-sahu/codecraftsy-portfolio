@@ -2,7 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <section>
+    <section className='folio_12'>
       <div className="img-accordion">
         <div className="img img1">
           <p className='bgi1'></p>
