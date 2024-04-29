@@ -1,13 +1,22 @@
 import React from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     return (
         <Navbar expand="lg" className="bg-body-tertiary">
             <Container fluid className='justify-content-around'>
                 <div>
-                    <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+                    <Link to='/'>
+                        <img src='./logo-cc.png' alt='logo'
+                            style={{
+                                height: '44px',
+                                width: '122px',
+                                borderRadius: '8px'
+                            }}
+                        />
+                    </Link>
+
                 </div>
                 <div>
                     <Navbar.Toggle aria-controls="navbarScroll" />
@@ -19,7 +28,7 @@ const NavBar = () => {
                         >
                             <NavLink to='/'>Home</NavLink>
                             <NavLink to='/about'>About</NavLink>
-                            <NavLink to='/services'>Services</NavLink>
+                            <NavLink to='/portfolio'>Portfolio</NavLink>
                             <NavLink to='/contact-us'>Contact</NavLink>
                         </Nav>
                     </Navbar.Collapse>

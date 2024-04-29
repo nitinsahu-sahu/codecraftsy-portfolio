@@ -31,6 +31,12 @@
   display: flex;
 }
 
+.img:hover {
+  flex: 5;
+  opacity: 0.5;
+
+}
+
 .img {
   flex: 1;
   height: 100%;
@@ -46,23 +52,6 @@
   position: relative;
 }
 
-.img1 {
-  background-image: url("https://gbhin.com/wp-content/uploads/2024/01/wp-e1688992192885.png");
-}
-
-.img2 {
-  background-image: url("https://gbhin.com/wp-content/uploads/2024/01/wp-e1688992192885.png");
-}
-.img3 {
-  background-image: url("https://gbhin.com/wp-content/uploads/2024/01/wp-e1688992192885.png");
-}
-.img4 {
-  background-image: url("https://gbhin.com/wp-content/uploads/2024/01/wp-e1688992192885.png");
-}
-.img5 {
-  background-image: url("https://gbhin.com/wp-content/uploads/2024/01/wp-e1688992192885.png");
-}
-
 .img p {
   position: absolute;
   bottom: 0;
@@ -75,14 +64,11 @@
   transition: all .7s;
   text-transform: uppercase;
   white-space: nowrap;
+  color: #00adb5;
 }
 
 .img-accordion:hover .img {
   transform: skew(0);
-}
-
-.img:hover {
-  flex: 5;
 }
 
 .img:hover p {
@@ -95,56 +81,56 @@
 
 .main {
   display: flex;
-   justify-content: center;
-   margin-top: 50px;
-
-
+  justify-content: center;
+  margin-top: 50px;
 }
 
 .textMain {
-align-self: center;
-margin-left: 5%;
+  align-self: center;
+  margin-left: 5%;
 }
 
 .outer-circle {
   width: 500px;
   height: 575px;
   border: 40px solid rgb(248, 248, 248);
-  
-  border-radius: 50%; /* Make it a circle */
+
+  border-radius: 50%;
+  /* Make it a circle */
   position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
 }
 
 .inner-circle {
-  width: calc(100%); 
-  height: calc(100%); 
-  border: 10px solid #135e96; 
-  border-radius: 50%; 
+  width: calc(100%);
+  height: calc(100%);
+  border: 10px solid #135e96;
+  border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #135e96;
 }
+
 .icons {
   height: 30px;
   width: 30px;
 }
 
- h1{
+h1 {
   border-left: 4px solid red;
   padding-right: 10%;
-  font-size:40px;
-  color:#fff;
+  font-size: 40px;
+  color: #fff;
   font-weight: 700;
- }
+}
 
-.text{
+.text {
   display: flex;
   font-size: 20px;
-    font-weight: 500;
-    word-spacing: 2px;
-     margin-top:20px;
-margin-left:2px;
+  font-weight: 500;
+  word-spacing: 2px;
+  margin-top: 20px;
+  margin-left: 2px;
 }
