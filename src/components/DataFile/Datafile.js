@@ -1,25 +1,38 @@
-const Menus =[
+const ProjectSliderData =[
     {
-        'title':'home',
-        'path':'/',
-        'componet-name':'Home',
+        'title':'Pratham Career Institue',
+        'src':'https://prathamcareerinstitute.com/',
+        'technology':'WordPress',
+        'img':'./pci.png',
     },
     {
-        'title':'contact-us',
-        'path':'/contact-us',
-        'componet-name':'ContactUs',
+        'title':'Wall Street Metals',
+        'src':'https://wallstreetmetals.com/',
+        'technology':'WordPress',
+        'img':'./wsm.png',
+
     },
     {
-        'title':'about',
-        'path':'/about',
-        'componet-name':'About',
+        'title':'Whizoid',
+        'src':'https://www.whizoid.com/',
+        'technology':'React JS',
+        'img':'./whizoid.png',
+
     },
     {
-        'title':'services',
-        'path':'/services',
-        'componet-name':'Services',
+        'title':'Serta',
+        'src':'https://www.serta.com/',
+        'technology':'WordPress',
+        'img':'./serta.png',
+
+    },
+    {
+        'title':'Kareo',
+        'src':'https://www.kareo.com/ehr',
+        'technology':'MERN STACK',
+        'img':'./kareo-mern.png',
+
     },
 
 ]
-
-export default Menus
+export default ProjectSliderData
