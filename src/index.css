@@ -7,7 +7,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-a{
+a {
   display: block;
   padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
   font-size: var(--bs-nav-link-font-size);
@@ -16,39 +16,11 @@ a{
   text-decoration: none !important;
   background: 0 0;
   border: 0;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
   margin: 0px 8px;
 }
 
-.active{
+.active {
   color: pink !important;
   border-bottom: 1px solid red;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-
-
-.bgi1 {
-  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/image_2023_06_22T07_35_32_488Z-e1687421820101.png');
-}
-
-.bgi2 {
-  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/wp-e1688992192885.png');
-}
-
-.bgi3 {
-  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/corephp.png');
-}
-
-.bgi4 {
-  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/screencapture-herwishlist-2023-07-12-14_05_10-e1689151024909.png');
-}
-
-.bgi5 {
-  background-image: url('https://gbhin.com/wp-content/uploads/2024/01/image_2023_06_22T07_44_23_609Z-1-e1687421603744.png');
-}
-

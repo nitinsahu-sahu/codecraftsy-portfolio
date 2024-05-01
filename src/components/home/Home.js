@@ -1,12 +1,12 @@
 import React from 'react'
 import Circle from './Circle';
-import ProjectSlider from './ProjectSlider';
+import SingleProjectCard from './ProjectSlider';
 
 const Home = () => {
   return (
     <>
       <section className='folio_12'>
-        <ProjectSlider />
+        <SingleProjectCard />
       </section>
       <section>
         <Circle />

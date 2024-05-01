@@ -1,6 +1,5 @@
 .App {
   font-family: sans-serif;
-  text-align: center;
 }
 
 * {
@@ -31,20 +30,22 @@
   display: flex;
 }
 
+.img-accordion div {
+  border-radius: 20px;
+}
+
 .img:hover {
   flex: 5;
   opacity: 0.5;
-
 }
 
 .img {
   flex: 1;
   height: 100%;
   width: 172px;
-  transform: skew(5deg);
   cursor: pointer;
   margin: 0 2px;
-  transition: all 0.3s;
+  transition: all 0.7s;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -67,10 +68,6 @@
   color: #00adb5;
 }
 
-.img-accordion:hover .img {
-  transform: skew(0);
-}
-
 .img:hover p {
   background-color: transparent;
   border: 2px solid #222;
@@ -79,58 +76,41 @@
 
 /* ------------------Circle----------------------- */
 
-.main {
-  display: flex;
-  justify-content: center;
-  margin-top: 50px;
-}
-
-.textMain {
-  align-self: center;
-  margin-left: 5%;
-}
-
 .outer-circle {
-  width: 500px;
-  height: 575px;
-  border: 40px solid rgb(248, 248, 248);
-
+  width: 420px;
+  height: 480px;
+  border: 30px solid rgb(248, 248, 248);
   border-radius: 50%;
-  /* Make it a circle */
-  position: relative;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3)
 }
 
 .inner-circle {
-  width: calc(100%);
-  height: calc(100%);
-  border: 10px solid #135e96;
   border-radius: 50%;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #135e96;
+  background-color: #00adb5;
 }
 
-.icons {
-  height: 30px;
-  width: 30px;
+.inner-circle img {
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-h1 {
-  border-left: 4px solid red;
-  padding-right: 10%;
-  font-size: 40px;
-  color: #fff;
-  font-weight: 700;
+.trans-mg {
+  animation: 3s slide-right;
 }
 
-.text {
-  display: flex;
-  font-size: 20px;
-  font-weight: 500;
-  word-spacing: 2px;
-  margin-top: 20px;
-  margin-left: 2px;
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
 }
+
+

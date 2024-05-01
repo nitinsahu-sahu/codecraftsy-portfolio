@@ -7,12 +7,12 @@ const ProjectSlider = () => {
         <>
             <div className="img-accordion">
                 {
-                    ProjectSliderData.map((docs, index)=><div key={index} className="img" style={{ backgroundImage: `url(${docs.img})` }}>
+                    ProjectSliderData.map((docs, index)=><div key={index} className={`img acc_img_${index}`} style={{ backgroundImage: `url(${docs.img})` }}>
                     <Link to={`${docs.src}`} target='_blank'><p>{docs.title}</p></Link>
                 </div>)
                 }
-            </div></>
+            </div>
+            </>
     )
 }
-
 export default ProjectSlider
