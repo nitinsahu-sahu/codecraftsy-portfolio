@@ -5,11 +5,11 @@ import SingleProjectCard from './ProjectSlider';
 const Home = () => {
   return (
     <>
-      <section className='folio_12'>
-        <SingleProjectCard />
+      <section>
+        {/* <SingleProjectCard /> */}
       </section>
       <section>
-        <Circle />
+        {/* <Circle /> */}
       </section>
     </>
   )

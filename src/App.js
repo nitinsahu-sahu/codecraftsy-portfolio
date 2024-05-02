@@ -1,7 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { About, ContactUs, Footer, Home,  NavBar,  Services } from './components';
-import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <div className="App">
