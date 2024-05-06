@@ -74,26 +74,8 @@ const ContactUs = () => {
   };
 
   return (
-    <div
-      className="contact2"
-      style={{
-        position: "relative",
-        overflow: "hidden",
-        width: "100%",
-        height: "100%",
-      }}
-      id="contact"
-    >
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235526.9495847478!2d75.699033217425!3d22.72420499950336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fcad1b410ddb%3A0x96ec4da356240f4!2sIndore%2C%20Madhya%20Pradesh!5e0!3m2!1sen!2sin!4v1714473149628!5m2!1sen!2sin"
-        width="100%"
-        height="60%"
-        style={{ position: "absolute", top: 0, left: 0, border: 0 }}
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-      ></iframe>
-      <div className="contact2" id="contact">
+    <>
+      {/* <div className="contact2" id="contact">
         <div className="container">
           <div className="row contact-container">
             <div className="col-lg-12">
@@ -266,9 +248,95 @@ const ContactUs = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      <div className="container mx-auto">
+        <div class="h-full">
+            <div class="px-6 py-12 flex justify-center">
+              <div class="w-full xl:w-3/4 lg:w-11/12  md:flex sm:flex-nowrap flex-wrap shadow-contact-shadow">
+                <div class="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden p-5 relative">
+                  <h3 class="pt-4 pb-2 text-2xl text-center text-gray-800 dark:text-white">CONTACT US</h3>
+                  <form class="px-8 pt-2 pb-2 mb-4 bg-white dark:bg-gray-800 rounded">
+                    <div class="mb-4 md:flex md:justify-between">
+                      <div class="mb-4 md:mr-2 md:mb-0">
+                        <label class="block mb-2 text-sm font-bold text-gray-700 dark:text-white" for="firstName">
+                          First Name
+                        </label>
+                        <input
+                          class="w-full px-3 py-2 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                          id="firstName"
+                          type="text"
+                          placeholder="First Name"
+                        />
+                      </div>
+                      <div class="md:ml-2">
+                        <label class="block mb-2 text-sm font-bold text-gray-700 dark:text-white" for="lastName">
+                          Last Name
+                        </label>
+                        <input
+                          class="w-full px-3 py-2 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                          id="lastName"
+                          type="text"
+                          placeholder="Last Name"
+                        />
+                      </div>
+                    </div>
+                    <div class="mb-4">
+                      <label class="block mb-2 text-sm font-bold text-gray-700 dark:text-white" for="email">
+                        Email
+                      </label>
+                      <input
+                        class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"
+                        id="email"
+                        type="email"
+                        placeholder="Email"
+                      />
+                    </div>
+                    <div class="mb-4">
+                      <label class="block mb-2 text-sm font-bold text-gray-700 dark:text-white" for="email">
+                        Message
+                      </label>
+                      <textarea id="about" name="about" rows="3" class="w-full px-3 py-2 mb-3 text-sm leading-tight text-gray-700 dark:text-white border rounded shadow appearance-none focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <div class="mb-6 btn-01 text-center">
+                      <button className="btn_common" role="button">
+                        <span class="text">
+                          Submit
+                        </span>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <div class="lg:w-1/3 md:w-1/2 bg-white md:flex md:flex-col md:ml-auto w-full md:py-8 md:mt-0 bg-no-repeat" style={{
+                  backgroundImage:
+                    "url(https://www.wrappixel.com/demos/ui-kit/wrapkit/assets/images/contact/1.jpg)",
+                    backgroundSize:'cover'
+                }}>
+                  <div class="max-w-full mx-auto rounded-lg overflow-hidden">
+                    <div class="px-6 py-4">
+                      <h3 class="text-lg font-medium text-gray-900">Our Address</h3>
+                      <p class="mt-1 text-gray-600">123 Main St, San Francisco, CA 94105</p>
+                    </div>
+                    <div class="border-t border-gray-200 px-6 py-4">
+                      <h3 class="text-lg font-medium text-gray-900">Hours</h3>
+                      <p class="mt-1 text-gray-600">Monday - Friday: 9am - 5pm</p>
+                      <p class="mt-1 text-gray-600">Saturday: 10am - 4pm</p>
+                      <p class="mt-1 text-gray-600">Sunday: Closed</p>
+                    </div>
+                    <div class="border-t border-gray-200 px-6 py-4">
+                      <h3 class="text-lg font-medium text-gray-900">Contact</h3>
+                      <p class="mt-1 text-gray-600">Email: info@example.com</p>
+                      <p class="mt-1 text-gray-600">Phone: +1 23494 34993</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+
+    </>
   );
 };
 
 export default ContactUs;
+
