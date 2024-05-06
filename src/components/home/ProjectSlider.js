@@ -1,18 +1,29 @@
-import React from 'react'
-import ProjectSliderData from '../DataFile/Datafile'
+import React from 'react';
 import { Link } from 'react-router-dom'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import ProjectSliderData from '../DataFile/Datafile';
+
 
 const ProjectSlider = () => {
     return (
         <>
-            <div className="img-accordion">
+            <Carousel
+                interval={2500}
+                autoPlay={true}
+                infiniteLoop={true}
+                width="100%"
+                showThumbs={false}
+                showStatus={false}
+            >
                 {
-                    ProjectSliderData.map((docs, index)=><div key={index} className={`img acc_img_${index}`} style={{ backgroundImage: `url(${docs.img})` }}>
-                    <Link to={`${docs.src}`} target='_blank'><p>{docs.title}</p></Link>
-                </div>)
+                    ProjectSliderData.map((item, index) => <Link to={`${item.src}`} target='_blank'><div key={index}>
+                            <img src={`${item.img}`} />
+                    </div></Link>)
                 }
-            </div>
-            </>
+            </Carousel >
+
+        </>
     )
 }
 export default ProjectSlider
