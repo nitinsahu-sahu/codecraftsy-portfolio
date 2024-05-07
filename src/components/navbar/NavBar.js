@@ -9,10 +9,10 @@ function Navbar() {
     };
 
     return (
-        <nav className="bg-white border-gray-200 dark:bg-gray-900">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="./logo-cc-img.png" className="h-20 w-28" alt="site logo" />
+        <nav className="bg-white border-gray-200 dark:bg-gray-900 sticky top-0 z-10 shadow-lg">
+            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto px-4">
+                <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse p-1 ml-10">
+                    <img src="./logo-cc-img1.png" alt="site logo" className='logo'/>
                 </Link>
                 <button onClick={toggleMenu} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded={isMenuOpen}>
                     <span className="sr-only">Open main menu</span>
@@ -22,17 +22,17 @@ function Navbar() {
                 </button>
                 <div className={`w-full md:block md:w-auto ${isMenuOpen ? '' : 'hidden'}`} id="navbar-default">
                     <ul className="font-semibold flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li className='p-3'>
-                            <NavLink to="/" className="block py-2 px-3 text-darkgreen bg-blue-700 rounded md:bg-transparent md:text-darkgreen md:p-0 dark:text-white md:hover:text-themeyellow md:dark:text-blue-500" aria-current="page">Home</NavLink>
+                        <li className='p-1'>
+                            <a href="#home" className="block py-2 px-3 text-darkgreen  rounded md:bg-transparent md:text-darkgreen md:p-0 dark:text-white md:hover:text-themeyellow md:dark:text-blue-500" aria-current="page">Home</a>
                         </li>
-                        <li className='p-3'>
-                            <NavLink to="about" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</NavLink>
+                        <li className='p-1'>
+                            <a href="#portfolio" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio</a>
                         </li>
-                        <li className='p-3'>
-                            <NavLink to="services" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</NavLink>
+                        <li className='p-1'>
+                            <a href="#about" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">about</a>
                         </li>
-                        <li className='p-3'>
-                            <NavLink to="contact-us" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</NavLink>
+                        <li className='p-1'>
+                            <a href="#contact" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
                         </li>
                     </ul>
                 </div>
