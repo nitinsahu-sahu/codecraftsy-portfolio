@@ -261,3 +261,12 @@
   background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
   background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
 }
+
+.error {
+  color: #ff4400;
+}
+
+.blur-effect {
+  filter: blur(5px); 
+  pointer-events: none; 
+}
