@@ -26,7 +26,7 @@ function Navbar() {
                             <a href="#home" className="block py-2 px-3 text-darkgreen  rounded md:bg-transparent md:text-darkgreen md:p-0 dark:text-white md:hover:text-themeyellow md:dark:text-blue-500" aria-current="page">Home</a>
                         </li>
                         <li className='p-1'>
-                            <a href="#portfolio" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio</a>
+                            <a href="#projectTab" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Portfolio</a>
                         </li>
                         <li className='p-1'>
                             <a href="#about" className="block py-2 px-3 text-darkgreen rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-themeyellow md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">about</a>
