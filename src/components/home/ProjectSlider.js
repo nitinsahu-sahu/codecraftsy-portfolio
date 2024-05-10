@@ -17,8 +17,8 @@ const ProjectSlider = () => {
                 showStatus={false}
             >
                 {
-                    ProjectSliderData.map((item, index) => <Link to={`${item.src}`} target='_blank'><div key={index}>
-                            <img src={`${item.img}`} />
+                    ProjectSliderData.map((item, index) => <Link to={`${item.src}`} target='_blank' key={index}><div >
+                            <img src={`${item.img}`} alt='img'/>
                     </div></Link>)
                 }
             </Carousel >
