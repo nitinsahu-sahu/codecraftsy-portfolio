@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const ProjectTabs = () => {
     const [activeTab, setActiveTab] = useState('react-panel');
@@ -54,7 +55,7 @@ const ProjectTabs = () => {
             title: "Whizoid Studio",
             description: "Crafting Solutions For The Modern World.",
             imgUrl: "./whizoid.png",
-            webLink: "https://www.whizoid.com/",
+            webLink: "https://vvmovil.com/",
         },
         {
             title: "Kareo",
@@ -142,19 +143,21 @@ const ProjectTabsContent = ({ id, activeTab, cn, project }) => {
             id={id}
             className={` tab-panel p-4 transition duration-300 bg-purple-50 rounded-2xl ${cn} ${activeTab === id ? 'visible opacity-100' : 'invisible opacity-0'}`}
         >
-            <div class="flex flex-wrap mx-2.5 gap-1.5 items-center my-2 ">
+            <div className="flex flex-wrap mx-2.5 gap-1.5 items-center my-2 ">
                 {
-                    project.map((pro, index) => <div class="relative block w-full md:w-[49%] lg:w-80 group ">
-                    <img class="absolute inset-0 object-cover w-full h-full group-hover:opacity-50 rounded-2xl" src={pro.imgUrl} />
-                    <div class="relative p-5">
-                        <div class="mt-8 opacity-0 group-hover:opacity-100 transition-opacity">
-                            <div class="p-2 rounded-lg shadow-lg">
-                                <p class="text-lg text-gray-800">{pro.title}</p>
-                                <button class="px-4 py-2 text-sm text-white bg-green-600">View project</button>
+                    project.map((pro, index) => <div key={index} className="relative block w-full md:w-[49%] lg:w-80 group ">
+                        <img className="absolute inset-0 object-cover w-full h-full group-hover:opacity-60 rounded-2xl" src={pro.imgUrl} />
+                        <div className="relative p-5">
+                            <div className="mt-8 opacity-0 group-hover:opacity-100 transition-opacity">
+                                <div className="p-2 rounded-lg shadow-lg">
+                                    <p className="text-lg text-gray-800 font-bold">{pro.title}</p>
+                                    <Link to={pro.webLink} target="_blank">
+                                        <button className="px-4 py-2 text-sm text-white bg-green-600">View project</button>
+                                    </Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </div>)
+                    </div>)
                 }
 
             </div>
