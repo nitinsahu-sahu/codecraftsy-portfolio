@@ -13,12 +13,13 @@ const Home = () => {
       <section id="projectTab" className="mt-10">
         <ProjectTabs />
       </section>
-      <section id="contact md:mt-16">
-        <ContactUs />
-      </section>
+
 
       <section>
         <Skills />
+      </section>
+      <section id="contact md:mt-16">
+        <ContactUs />
       </section>
     </>
   );
