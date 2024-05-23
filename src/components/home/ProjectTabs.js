@@ -1,104 +1,37 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import { mernprojects, reactprojects, wpprojects } from '../DataFile/Datafile';
 
 const ProjectTabs = () => {
     const [activeTab, setActiveTab] = useState('react-panel');
-
     const handleTabClick = (tabId) => {
         setActiveTab(tabId);
     };
-
-    const wpprojects = [
-        {
-            title: "Wall Street Metal",
-            description: "The precious metals market is built for corporations, governments, and fund managers. We’re built for individuals like retired veterans and small business owners. We’re here for you.",
-            imgUrl: './wsm.png',
-            webLink: 'https://wallstreetmetals.com/',
-        },
-        {
-            title: "Rock Star",
-            description: "Rockstar Sealing Systems is a leading provider of cleaning and sealing solutions for all natural stone surfaces.",
-            imgUrl: "./rs.png",
-            webLink: 'https://www.rockstarsealing.com/',
-
-        },
-        {
-            title: "Serta",
-            description: "Discover a comfortable. supportive matress.",
-            imgUrl: 'serta.png',
-            webLink: 'https://www.serta.com/',
-
-        },
-        {
-            title: "SkipStone",
-            description: "We secure our financial resources independently, enabling us to produce economical, cost-effective films.",
-            imgUrl: 'skipstone.png',
-            webLink: 'https://skipstonepictures.com/',
-
-        },
-        {
-            title: "Pratham Career Institue",
-            description: "Our aim is not only to get you to the top medical college but more importantly we also take you on the path of realization to make you discuss your latest potential and top this potential to bring out best of you.",
-            imgUrl: './pci.png',
-            webLink: 'https://prathamcareerinstitute.com/',
-
-        },
-    ];
-    const reactprojects = [
-        {
-            title: "Whizoid Studio",
-            description: "Crafting Solutions For The Modern World.",
-            imgUrl: "./whizoid.png",
-            webLink: "https://www.whizoid.com/",
-        },
-        {
-            title: "Whizoid Studio",
-            description: "Crafting Solutions For The Modern World.",
-            imgUrl: "./whizoid.png",
-            webLink: "https://vvmovil.com/",
-        },
-        {
-            title: "Kareo",
-            description: "Kareo and PatientPop have joined forces to improve the patient experience and fully support providers, ushering in a new era of connected practice.",
-            imgUrl: './kareo-mern.png',
-            webLink: 'https://www.kareo.com/ehr',
-        },
-        {
-            title: "Whizoid Studio",
-            description: "Crafting Solutions For The Modern World.",
-            imgUrl: "./whizoid.png",
-            webLink: "https://www.whizoid.com/",
-        },
-    ];
-    const mernprojects = [
-        {
-            title: "Kareo",
-            description: "Kareo and PatientPop have joined forces to improve the patient experience and fully support providers, ushering in a new era of connected practice.",
-            imgUrl: './kareo-mern.png',
-            webLink: 'https://www.kareo.com/ehr',
-        },
-        {
-            title: "Whizoid Studio",
-            description: "Crafting Solutions For The Modern World.",
-            imgUrl: "./whizoid.png",
-            webLink: "https://www.whizoid.com/",
-        },
-        {
-            title: "Kareo",
-            description: "Kareo and PatientPop have joined forces to improve the patient experience and fully support providers, ushering in a new era of connected practice.",
-            imgUrl: './kareo-mern.png',
-            webLink: 'https://www.kareo.com/ehr',
-        },
-        {
-            title: "Whizoid Studio",
-            description: "Crafting Solutions For The Modern World.",
-            imgUrl: "./whizoid.png",
-            webLink: "https://www.whizoid.com/",
-        },
-    ];
     return (
         <>
-            <div className="max-w-5xl mx-auto px-8 sm:px-0 ">
+            <div className="max-w-full mx-auto ">
+                <div className='text-center z-0 top-0'>
+                    <div className='' style={{
+                        transition: "background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration, .4s)"
+                    }}>
+                        <p
+                            className='text-white text-7xl font-bold stroke-black mix-blend-multiply'
+                            style={{ letterSpacing: '-0.5px', textShadow: "0px 0px 1px #585367" }}
+                        >
+                            Portfolio
+                        </p>
+                    </div>
+                </div>
+                <div className='relative mb-7' style={{ marginBlockEnd: "20px" }}>
+                    <div style={{
+                        marginTop: "-4.5rem",
+                        transition: "background .3s,border .3s,border-radius .3s,box-shadow .3s,transform var(--e-transform-transition-duration, .4s)"
+                    }}>
+                        <div className='text-center relative'>
+                            <h2 className='text-darkgreen mb-2 font-semibold text-5xl tracking-tight'>Explore our <span className='text-themeyellow hover:text-lightgreen font-bold italic'>Portfolio</span></h2>
+                        </div>
+                    </div>
+                </div>
                 <div
                     role="tablist"
                     aria-label="tabs"
@@ -109,7 +42,7 @@ const ProjectTabs = () => {
                     <ProjectTabsBtn activeTab={activeTab} handleTabClick={handleTabClick} btnName="MERN Stack" panel="mern-panel" />
                     <ProjectTabsBtn activeTab={activeTab} handleTabClick={handleTabClick} btnName="WordPress" panel="wordpress-panel" />
                 </div>
-                <div className="mt-6 relative rounded-3xl ">
+                <div className="relative">
                     <ProjectTabsContent
                         id="react-panel"
                         activeTab={activeTab}
@@ -135,31 +68,29 @@ const ProjectTabs = () => {
 
 export default ProjectTabs
 
-
 const ProjectTabsContent = ({ id, activeTab, cn, project }) => {
     return (
         <div
             role="tabpanel"
             id={id}
-            className={` tab-panel p-4 transition duration-300 bg-purple-50 rounded-2xl ${cn} ${activeTab === id ? 'visible opacity-100' : 'invisible opacity-0'}`}
+            className={` tab-panel p-4 transition duration-300 ${cn} ${activeTab === id ? 'visible opacity-100' : 'invisible opacity-0'}`}
         >
-            <div className="flex flex-wrap mx-2.5 gap-1.5 items-center my-2 ">
-                {
-                    project.map((pro, index) => <div key={index} className="relative block w-full md:w-[49%] lg:w-80 group ">
-                        <img className="absolute inset-0 object-cover w-full h-full group-hover:opacity-60 rounded-2xl" src={pro.imgUrl} />
-                        <div className="relative p-5">
-                            <div className="mt-8 opacity-0 group-hover:opacity-100 transition-opacity">
-                                <div className="p-2 rounded-lg shadow-lg">
-                                    <p className="text-lg text-gray-800 font-bold">{pro.title}</p>
-                                    <Link to={pro.webLink} target="_blank">
-                                        <button className="px-4 py-2 text-sm text-white bg-green-600">View project</button>
-                                    </Link>
+            <div className="flex flex-wrap">
+                {project.map((project, index) => (
+                    <div key={index} className="w-full md:w-1/3 px-2 mb-8">
+                        <div className="relative group">
+                            <img className="w-full  max-h-44" alt="..." src={project.imgUrl} />
+                            <a href={project.link} className=" absolute inset-0 bg-opacity-50 bg-gray-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                                <div className="text-center text-white p-4">
+                                    <h4 className="text-xl font-bold mb-2">{project.title}</h4>
+                                    <p>{project.description}</p>
+                                    <br />
+                                    <p className="font-semibold">Click to View Example</p>
                                 </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>)
-                }
-
+                    </div>
+                ))}
             </div>
         </div>
     )
