@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import ProjectSliderData from '../DataFile/Datafile';
+import { ProjectSliderData } from '../DataFile/Datafile';
 
 
 const ProjectSlider = () => {
@@ -18,7 +18,7 @@ const ProjectSlider = () => {
             >
                 {
                     ProjectSliderData.map((item, index) => <Link to={`${item.src}`} target='_blank' key={index}><div >
-                            <img src={`${item.img}`} alt='img'/>
+                        <img src={`${item.img}`} alt='img' />
                     </div></Link>)
                 }
             </Carousel >

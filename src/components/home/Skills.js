@@ -38,41 +38,41 @@ const Skills = () => {
       </div>
       <div className="flex justify-center items-center">
         <div className="flex justify-center mt-10 space-x-4">
-        <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
-<div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          </div>
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
-<div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          </div>
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
-<div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          </div>
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
+          </div>
         </div>
       </div>
       <div className="flex justify-center items-center">
         <div className="flex justify-center mt-10 space-x-4">
-        <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
-<div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          </div>
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
-<div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          </div>
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
+          </div>
         </div>
       </div>
       <div className="flex justify-center items-center">
         <div className="flex justify-center mt-10 space-x-4">
-        <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
-<div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
+          </div>
+          <div className="bg-darkgreen w-24 h-28 shadow-2xl shadow-skill-shadow opacity-100 rounded-lg hover:bg-themeyellow cursor-pointer">
 
-</div>
+          </div>
         </div>
       </div>
     </div>

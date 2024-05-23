@@ -4,28 +4,49 @@ import { IoRocketOutline } from "react-icons/io5";
 
 
 const SingleProjectCard = () => {
+  const projects = [
+    {
+      imgSrc: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
+      link: 'agency.html',
+      title: 'Agency',
+      description: 'Customize your agency presentation with many combinations.',
+    },
+    {
+      imgSrc: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
+      link: 'houses.html',
+      title: 'Company',
+      description: 'Create a simple and elegant presentation page for your company or enterprise.',
+    },
+    {
+      imgSrc: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
+      link: 'startup.html',
+      title: 'Startup',
+      description: 'Present your startup team in an unique and beautiful way.',
+    },
+    {
+      imgSrc: 'https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg',
+      link: 'photo.html',
+      title: 'Portfolio',
+      description: 'Create a simple and elegant portfolio page for your projects.',
+    },
+  ];
   return (
-    <div className="container-fluid">
-      <div className='row my-5'>
-        <div className="d-flex justify-content-center col-sm-6 col-md-6 col-lg-6 ">
-          <div className='outer-circle position-relative'>
-            <div className="inner-circle w-100 h-100 border border-info-subtle border-5 position-absolute">
-              <img src='./kareo-mern.png' className='trans-mg w-100 h-100 position-absolute object-fit-cover' alt='kareo'/>
-            </div>
+    <div className="flex flex-wrap mx-4">
+      {projects.map((project, index) => (
+        <div key={index} className="w-full md:w-1/3 px-2 mb-8">
+          <div className="relative group">
+            <img className="w-full" alt="..." src={project.imgSrc} />
+            <a href={project.link} className="absolute inset-0 bg-opacity-50 bg-gray-800 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="text-center text-white p-4">
+                <h4 className="text-xl font-bold mb-2">{project.title}</h4>
+                <p>{project.description}</p>
+                <br />
+                <p className="font-semibold">Click to View Example</p>
+              </div>
+            </a>
           </div>
         </div>
-        <div className='col-sm-6 col-md-6 col-lg-6 m-auto p-5'>
-          <div className='border-start border-5 border-info'>
-            <h1 style={{ paddingLeft: '5px' }}>Obastyle</h1>
-          </div>
-          <div className='my-2'>
-            <div><GiTechnoHeart size={24} style={{color:"pink"}} /><span className='fs-5'> Technology: PrestaShopff</span></div>
-          </div>
-          <div className='fs-5'>
-            <div><IoRocketOutline size={24} style={{color:"pink"}} /><span> Digital Marketing</span></div>
-          </div>
-        </div>
-      </div>
+      ))}
     </div>
   )
 }
