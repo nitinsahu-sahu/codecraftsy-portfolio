@@ -14,7 +14,6 @@ const Home = () => {
         <ProjectTabs />
       </section>
 
-
       <section>
         <Skills />
       </section>
