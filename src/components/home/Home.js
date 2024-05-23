@@ -14,6 +14,7 @@ const Home = () => {
       <section id="projectTab" className="mt-10 py-8">
         <ProjectTabs />
       </section>
+
       <section id="skills">
         <Skills />
       </section>
