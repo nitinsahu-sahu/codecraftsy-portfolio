@@ -22,6 +22,38 @@
   margin-right: 10rem;
 } */
 
+/* ------------------------progress Bar--------------- */
+
+.circle::before {
+  content: '';
+  position: absolute;
+  inset: 5px;
+  border-radius: 50%;
+  background: #222;
+  opacity: 0.8;
+}
+
+.circle::after {
+  content: '';
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  background: #333;
+  border: 6px solid #4d4c51;
+  border-radius: 50%;
+  box-shadow: inset 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.75), 0 -2px 2px rgba(255, 255, 255, 0.5), inset 0 4px 2px rgba(0, 0, 0, 0.25), inset 0 -2px 2px rgba(255, 255, 255, 0.5)
+}
+
+.circle h2{
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+.circle h4{
+  
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+}
+
 
 /* ---------------------project----------------------------- */
 .proj-imgbx {
@@ -411,61 +443,61 @@ img {
 }
 
 .blur-effect {
-  filter: blur(5px); 
-  pointer-events: none; 
+  filter: blur(5px);
+  pointer-events: none;
 }
 
 /* skills css */
 .skills-integration {
-    height: 540px;
+  height: 540px;
 }
 
 .skills-integration__container {
-    height: 100%;
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-    width: 1440px;
+  height: 100%;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 1440px;
 }
 
 .skills-integration__link {
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    background-color: transparent;
-    background-image: url('../public/polygon.svg');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow: none;
-    height: 187px;
-    outline: 0;
-    position: absolute;
-    transition: transform .3s linear;
-    width: 150px;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  background-color: transparent;
+  background-image: url('../public/polygon.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+  height: 187px;
+  outline: 0;
+  position: absolute;
+  transition: transform .3s linear;
+  width: 150px;
 }
 
 .skills-integration--animate .skills-integration__link {
-    animation-name: floating;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in-out;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .skills-integration__link:focus {
-    box-shadow: none;
-    outline: 0;
+  box-shadow: none;
+  outline: 0;
 }
 
 .skills-integration__item {
-    height: 36px;
-    left: 50%;
-    position: absolute;
-    top: 55px;
-    transform: translateX(-50%);
-    width: 36px;
+  height: 36px;
+  left: 50%;
+  position: absolute;
+  top: 55px;
+  transform: translateX(-50%);
+  width: 36px;
 }
 
-.avtar .skills-integration__item{
+.avtar .skills-integration__item {
   height: 40%;
   width: 30%;
 }
@@ -473,211 +505,211 @@ img {
 .skills-integration__skills,
 .skills-integration__skills:focus,
 .skills-integration__skills:hover {
-    background-color: transparent;
-    background-image: url('../public/polygon-center.svg');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: contain;
-    box-shadow: none;
-    height: 375px;
-    left: 50%;
-    outline: 0;
-    position: absolute;
-    top: 120px;
-    transform: translateX(-50%);
-    width: 300px;
+  background-color: transparent;
+  background-image: url('../public/polygon-center.svg');
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  box-shadow: none;
+  height: 375px;
+  left: 50%;
+  outline: 0;
+  position: absolute;
+  top: 120px;
+  transform: translateX(-50%);
+  width: 300px;
 }
 
 .domready .skills-integration__item img.faded {
-    opacity: 0;
-    transform: scale(0);
-    transition: opacity .15s ease-out, transform .15s ease-out !important;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity .15s ease-out, transform .15s ease-out !important;
 }
 
 .domready .skills-integration__item img.lazy-loaded {
-    opacity: 1;
-    transform: none;
+  opacity: 1;
+  transform: none;
 }
 
 .skills-integration__skills .skills-integration__item {
-    top: 125px;
+  top: 125px;
 }
 
 .skills-integration--1 {
-    animation-delay: 1s;
-    left: -3%;
-    top: 0;
+  animation-delay: 1s;
+  left: -3%;
+  top: 0;
 }
 
 .skills-integration--14 {
-    animation-delay: 1.5s;
-    right: -3%;
-    top: 0;
+  animation-delay: 1.5s;
+  right: -3%;
+  top: 0;
 }
 
 .skills-integration--2 {
-    animation-delay: 2s;
-    left: 25%;
-    top: 90px;
+  animation-delay: 2s;
+  left: 25%;
+  top: 90px;
 }
 
 .skills-integration--13 {
-    animation-delay: 2.5s;
-    right: 25%;
-    top: 90px;
+  animation-delay: 2.5s;
+  right: 25%;
+  top: 90px;
 }
 
 .skills-integration--3 {
-    animation-delay: 4s;
-    left: 1%;
-    top: 230px;
+  animation-delay: 4s;
+  left: 1%;
+  top: 230px;
 }
 
 .skills-integration--15 {
-    animation-delay: 4.5s;
-    right: 1%;
-    top: 230px;
+  animation-delay: 4.5s;
+  right: 1%;
+  top: 230px;
 }
 
 .skills-integration--5 {
-    animation-delay: 3s;
-    left: 36%;
-    top: 100px;
+  animation-delay: 3s;
+  left: 36%;
+  top: 100px;
 }
 
 .skills-integration--10 {
-    animation-delay: 3.5s;
-    right: 36%;
-    top: 100px;
+  animation-delay: 3.5s;
+  right: 36%;
+  top: 100px;
 }
 
 .skills-integration--4 {
-    animation-delay: 5s;
-    left: 5%;
-    top: 400px;
+  animation-delay: 5s;
+  left: 5%;
+  top: 400px;
 }
 
 .skills-integration--16 {
-    animation-delay: 5.5s;
-    right: 5%;
-    top: 400px;
+  animation-delay: 5.5s;
+  right: 5%;
+  top: 400px;
 }
 
 .skills-integration--6 {
-    animation-delay: 6s;
-    left: 35%;
-    top: 235px;
+  animation-delay: 6s;
+  left: 35%;
+  top: 235px;
 }
 
 .skills-integration--12 {
-    animation-delay: 6.5s;
-    right: 35%;
-    top: 235px;
+  animation-delay: 6.5s;
+  right: 35%;
+  top: 235px;
 }
 
 .skills-integration--7 {
-    animation-delay: 7s;
-    left: 40%;
-    top: 350px;
+  animation-delay: 7s;
+  left: 40%;
+  top: 350px;
 }
 
 .skills-integration--11 {
-    animation-delay: 7.5s;
-    right: 40%;
-    top: 350px;
+  animation-delay: 7.5s;
+  right: 40%;
+  top: 350px;
 }
 
 .skills-integration--8 {
-    animation-delay: 8s;
-    left: 40%;
-    top: 520px;
+  animation-delay: 8s;
+  left: 40%;
+  top: 520px;
 }
 
 .skills-integration--9 {
-    animation-delay: 8.5s;
-    right: 45%;
-    top: 30px;
+  animation-delay: 8.5s;
+  right: 45%;
+  top: 30px;
 }
 
 @media(min-width: 1024px) {
-    .skills-integration {
-        height: 740px;
-    }
+  .skills-integration {
+    height: 740px;
+  }
 
-    .skills-integration__skills,
-    .skills-integration__skills:focus,
-    .skills-integration__skills:hover {
-        height: 597px;
-        width: 554px;
-    }
+  .skills-integration__skills,
+  .skills-integration__skills:focus,
+  .skills-integration__skills:hover {
+    height: 597px;
+    width: 554px;
+  }
 
-    .skills-integration__skills .skills-integration__item {
-        top: 190px;
-    }
+  .skills-integration__skills .skills-integration__item {
+    top: 190px;
+  }
 
-    .skills-integration__link {
-        height: 266px;
-        width: 214px;
-    }
+  .skills-integration__link {
+    height: 266px;
+    width: 214px;
+  }
 
-    .skills-integration__item {
-        height: 60px;
-        top: 72px;
-        width: 60px;
-    }
+  .skills-integration__item {
+    height: 60px;
+    top: 72px;
+    width: 60px;
+  }
 
-    .skills-integration--5 {
-        left: 26%;
-    }
+  .skills-integration--5 {
+    left: 26%;
+  }
 
-    .skills-integration--10 {
-        right: 26%;
-    }
+  .skills-integration--10 {
+    right: 26%;
+  }
 
-    .skills-integration--2 {
-        left: 10%;
-    }
+  .skills-integration--2 {
+    left: 10%;
+  }
 
-    .skills-integration--13 {
-        right: 10%;
-    }
+  .skills-integration--13 {
+    right: 10%;
+  }
 
-    .skills-integration--6 {
-        left: 15%;
-        top: 275px;
-    }
+  .skills-integration--6 {
+    left: 15%;
+    top: 275px;
+  }
 
-    .skills-integration--12 {
-        right: 15%;
-        top: 275px;
-    }
+  .skills-integration--12 {
+    right: 15%;
+    top: 275px;
+  }
 
-    .skills-integration--7 {
-        left: 24%;
-        top: 400px;
-    }
+  .skills-integration--7 {
+    left: 24%;
+    top: 400px;
+  }
 
-    .skills-integration--11 {
-        right: 24%;
-        top: 400px;
-    }
+  .skills-integration--11 {
+    right: 24%;
+    top: 400px;
+  }
 
-    .skills-integration--9 {
-        right: 40%;
-        top: -20px;
-    }
+  .skills-integration--9 {
+    right: 40%;
+    top: -20px;
+  }
 }
 
 @keyframes floating {
-    0% {
-        transform: translateY(0) scale(1);
-    }
+  0% {
+    transform: translateY(0) scale(1);
+  }
 
-    50% {
-        transform: translateY(-10px) scale(.9);
-    }
+  50% {
+    transform: translateY(-10px) scale(.9);
+  }
 
-    to {
-        transform: translateY(0) scale(1);
-    }
+  to {
+    transform: translateY(0) scale(1);
+  }
 }

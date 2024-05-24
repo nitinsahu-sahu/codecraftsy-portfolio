@@ -4,6 +4,7 @@ import ContactUs from "../contactus/ContactUs";
 import ProjectTabs from "./ProjectTabs";
 import Skills from "./Skills";
 import SingleProjectCard from "./Circle";
+import Testing from "./Testing";
 
 const Home = () => {
   return (
@@ -14,7 +15,6 @@ const Home = () => {
       <section id="projectTab" className="mt-10 py-8">
         <ProjectTabs />
       </section>
-
       <section id="skills">
         <Skills />
       </section>
@@ -23,6 +23,9 @@ const Home = () => {
       </section>
       <section>
         <SingleProjectCard />
+      </section>
+      <section id="contact" className="md:mt-16">
+        <Testing />
       </section>
     </>
   );
