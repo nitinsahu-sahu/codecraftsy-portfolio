@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx}",
-  ],
+  content: ["./src/**/*.{js,jsx}"],
   theme: {
     extend: {},
     colors: {
@@ -11,17 +9,15 @@ module.exports = {
       themeyellow: "#FCDC2A",
       skin: "#F7F6BB",
       black: "#000000",
-      white: "#ffffff"
+      grey: "#595954",
+      white: "#ffffff",
     },
     boxShadow: {
-      'random-shadow': "rgba(100, 100, 111, 0.2) 1px 1px 9px 7px",
-      'contact-shadow': "2px 3px 14px black",
-      'skill-shadow': "6px 5px 12px 1px #471069"
+      "random-shadow": "rgba(100, 100, 111, 0.2) 1px 1px 9px 7px",
+      "contact-shadow": "2px 3px 14px black",
+      "skill-shadow": "6px 5px 12px 1px #471069",
+      "testimonial-shadow": "20px 0px 9px 0px #7f7b7b",
     },
-   
   },
-  plugins: [
-    require('flowbite/plugin')
-  ]
-}
-
+  plugins: [require("flowbite/plugin")],
+};
