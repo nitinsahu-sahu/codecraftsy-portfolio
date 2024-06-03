@@ -681,3 +681,59 @@ img {
         transform: translateY(0) scale(1);
     }
 }
+
+/* ------------Icons---------------- */
+.social-menu{
+  margin-top: 10px;
+}
+.social-menu ul {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.social-menu ul li {
+  list-style: none;
+   /* margin: 0 15px; */
+}
+
+.social-menu ul li .icon{
+  font-size: 20px;
+  /* line-height: 20px; */
+  transition: 0.1s;
+  color: #fff;
+}
+
+/* .social-menu ul li .icon:hover{
+color: #fff;
+} */
+
+.social-menu ul li a {
+
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color:#fff;
+    display: flex;
+    align-items:center;
+  justify-content: center;
+  transition: 1s;
+  /* box-shadow: 0px 0px 9px 0px rgba(124, 119, 119, 0.3); */
+}
+
+.social-menu ul li a:hover{
+  transform: translate(0,-10%);
+}
+
+.social-menu ul li .icon-linkedin{
+  color: #1453dcfa;
+}
+.social-menu ul li .icon-email{
+  color:#f91c1c;
+}
+.social-menu ul li .icon-skype{
+  color: rgb(21, 161, 216);
+}
+

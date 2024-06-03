@@ -4,6 +4,7 @@ import ContactUs from "../contactus/ContactUs";
 import ProjectTabs from "./ProjectTabs";
 import Skills from "./Skills";
 import SingleProjectCard from "./Circle";
+import Testimonial from "./Testimonial";
 
 const Home = () => {
   return (
@@ -18,6 +19,10 @@ const Home = () => {
       <section id="skills">
         <Skills />
       </section>
+      <section>
+        <Testimonial />
+      </section>
+
       <section id="contact" className="md:mt-16">
         <ContactUs />
       </section>
